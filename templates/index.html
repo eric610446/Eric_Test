@@ -1,9 +1,16 @@
+<!--
+	在 templates 中建立要顯示的框架
+	下面的{$變數}，取用的就是上面 php 所定義的 Smarty 變數，
+	執行網頁後，會將這個 html 進行編譯，變成一個可以應用到 php 變數的 .php 檔案，
+	可以在 templates_c 中找到每個 html 編譯後的 php 檔案
+-->
+
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>{$title}</title>
-</head>
-<body>
-{$content}
-</body>
+	<head>
+		<title>{$title}</title>
+	</head>
+	
+	<body>
+		{$content}
+	</body>
 </html>
