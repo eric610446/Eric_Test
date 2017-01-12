@@ -1,9 +1,9 @@
 <?php
-include "library/Smarty/Smarty.class.php";
-define('APP_PATH', str_replace('\\', '/', dirname(__FILE__)));
-$tpl = new Smarty();
-$tpl->template_dir = APP_PATH . "/templates/";
-$tpl->compile_dir = APP_PATH . "/templates_c/";
-$tpl->config_dir = APP_PATH . "/configs/";
-$tpl->cache_dir = APP_PATH . "/cache/";
+include "mini.php";
+
+$tpl = new mini();
+$tpl->template_dir = "\\templates";
+$tpl->compiled_dir = "\\templates_c";
+
+
 ?>
