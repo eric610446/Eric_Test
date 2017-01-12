@@ -1,8 +1,8 @@
 <html>
 <head>
-<title><? echo $GLOBALS['title'];?></title>
+<title><? echo $this->data_arr['title'];?></title>
 </head>
 <body>
-<? echo $GLOBALS['content'];?>
+<? echo $this->data_arr['content'];?>
 </body>
 </html>
