@@ -8,8 +8,32 @@
 <body>
 	<article>
 		<h1>{$content.0}</h1>
-		<h3>{$content.1}</h3>
-		<p>{$content.2}</p>
+		<p>{$content.1}</p>
+		<table>
+			<tr id='section'>
+				{section name=i loop=$color_block}
+					<tr>
+						<td bgcolor="{$color_block[i].0}"></td>
+						<td bgcolor="{$color_block[i].1}"></td>
+						<td bgcolor="{$color_block[i].2}"></td>
+						<td bgcolor="{$color_block[i].3}"></td>
+						<td bgcolor="{$color_block[i].4}"></td>
+						<td bgcolor="{$color_block[i].5}"></td>
+						<td bgcolor="{$color_block[i].6}"></td>
+						<td bgcolor="{$color_block[i].7}"></td>
+					</tr>
+				{/section}
+			</tr>
+			<tr id='foreach'>
+				{foreach item=i from=$color_block}
+					<tr>
+					{foreach item=j from=$i }
+						<td bgcolor="{$j}"></td>
+					{/foreach}
+					</tr>
+				{/foreach}
+			</tr>
+		</table>
 	</article>
 </body>
 
