@@ -1,0 +1,32 @@
+body {
+	font-family: "微軟正黑體", "Consolas" ;
+	font-size: 1em ;
+	color: #444 ;
+	background-color: #f0f0f0 ;
+	margin: 0 ;
+}
+
+header {
+	background-color: #d0d0d0 ;
+	height: 10% ;
+}
+h1 {
+	background-color: #dfdfd0 ;
+	font-size: 3em ;
+}
+
+nav {
+	
+	background-color: #dfd0d0 ;
+	width: 10% ;
+	height: 85% ;
+}
+
+article {
+	background-color: #d0d0df ;
+}
+
+footer {
+	font-size: 0.5em ;
+	height: 5% ;
+}

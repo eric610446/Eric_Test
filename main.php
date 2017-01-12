@@ -1,9 +1,14 @@
-<?php
-include "library/Smarty/Smarty.class.php";
-define('APP_PATH', str_replace('\\', '/', dirname(__FILE__)));
-$tpl = new Smarty();
-$tpl->template_dir = APP_PATH . "/templates/";
-$tpl->compile_dir = APP_PATH . "/templates_c/";
-$tpl->config_dir = APP_PATH . "/configs/";
-$tpl->cache_dir = APP_PATH . "/cache/";
+<?
+include("var.php") ;
+// 加入 Smarty lib
+include($GLOBALS['Smarty_lib']) ;
+
+// 定義一個 smarty 物件
+$smarty = new Smarty() ;
+// 定義四個基本目錄的名稱
+$smarty->template_dir = $GLOBALS['template_dir'] ;
+$smarty->compile_dir  = $GLOBALS['compile_dir'] ;
+$smarty->config_dir   = $GLOBALS['config_dir'] ;
+$smarty->cache_dir    = $GLOBALS['cache_dir'] ;
+
 ?>
