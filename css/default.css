@@ -4,10 +4,22 @@ body {
 	background-color: #f0f0f0 ;
 	font-size: 4em ;
 	font-family: "LiHei Pro", "微軟正黑體", "Arial" ;
+	color: #4169E1 ;
 }
 
 article {
 	text-align: center ;
-	margin: 10% ;
+	margin: 5% ;
 }
+
+h1 {
+	color: #222;
+}
+h2 {
+	color: #333 ;
+}
+h3 {
+	color: #444 ;
+}
+
 

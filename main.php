@@ -1,5 +1,7 @@
 <?php
 include "library/Smarty/Smarty.class.php";
+include "item/life.php" ;
+
 define('APP_PATH', str_replace('\\', '/', dirname(__FILE__)));
 $tpl = new Smarty();
 $tpl->template_dir = APP_PATH . "/templates/";
