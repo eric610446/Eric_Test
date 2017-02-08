@@ -1,0 +1,74 @@
+body {
+	background-color: #f0f0f0 ;
+	color: #333;
+	/* for chrome and safari */
+	background-image: -webkit-repeating-linear-gradient(
+		left,
+		#aaa,
+		#aaa 0.02%,
+		#a5a5a5 0.02%,
+		#a5a5a5 0.03%
+	) ;
+	/* forfirefox */
+
+}
+
+span {
+	font-size: 3em ;
+	font-family: "Bernard MT" ;
+}
+
+a[id='button'] {
+	display: inline-block ;
+	border-radius: 10px ;
+	/* -webkit-box-shadow: 水平距離 垂直距離 模糊半徑 擴散距離 顏色 inset(陰影向內); */
+	-webkit-box-shadow:
+		0px 3px #888,
+		0px 4px #7d7d7d,
+		0px 5px #787878,
+		0px 6px #6d6d6d,
+		0px 7px #666,
+		0px 8px #585858,
+		0px 9px #555,
+		0px 15px 5px -1px #888
+	;
+	-webkit-transition: -webkit-box-shadow .1s ease-in-out ;
+}
+/*
+span {
+	background-color: #E8E8E8;
+	background-image: -webkit-repeating-linear-gradient(
+		45deg,
+		#E8E8E8 0%,
+		#E8E8E8 0.5%,
+		#f5f5f5 0.5%,
+		#f5f5f5 2%
+	) ;
+	display: inline-block ;
+	padding: 10px 30px ;
+	color: #3A474D ;
+	border-radius: 10px ;
+	-webkit-box-shadow: 0px 0px 2px #FFF, 0px -1px #FFF ;
+	//font-weight: 700 ;
+	text-transform: uppercase ;
+	-webkit-transition: -webkit-transform .1s ease-in-out ;
+	text-shadow: 0px 1px #fff, 0px -1px #262F33 ;
+}
+*/
+span {
+	display: inline-block ;
+	padding: 10px 40px ;
+	background-color: #E8E8E8 ;
+	border-radius: 10px ;
+	-webkit-box-shadow: 0px 0px 1px white, 0px -1px white ;
+	background-image: -webkit-repeating-linear-gradient(
+		45deg,
+		#E8E8E8 0%,
+		#E8E8E8 0.5%,
+		#F5F5F5 0.5%,
+		#F5F5F5 2%
+	) ;
+	color: #3A474D ;
+	text-transform: uppercase ;
+	text-shadow: 0.1px -0.1px 0.1px #262F33 ;
+}
