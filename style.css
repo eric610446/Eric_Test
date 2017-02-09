@@ -95,7 +95,7 @@ body {
 
 	text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
-/*
+
 .button span:hover {
 	color: #AEBF3B;
 	text-shadow: 0px -1px #97A63A;
@@ -112,7 +112,7 @@ body {
 	0px 8px rgba(78,78,78,1),
 	0px 10px 2px 0px rgba(128,128,128,.6);
 }
-
+/*
 .button:active span{
 	-webkit-transform: translate(0, 5px);
 }
