@@ -1,7 +1,6 @@
 body {
 	background-color: #f0f0f0 ;
-	color: #333;
-	/* for chrome and safari */
+	color: #333 ;
 	background-image: -webkit-repeating-linear-gradient(
 		left,
 		#aaa,
@@ -9,12 +8,12 @@ body {
 		#a5a5a5 0.02%,
 		#a5a5a5 0.03%
 	) ;
+	padding: 150px;
+	padding-left: 350px ;
 }
 
 a[id='button'] {
 	display: inline-block ;
-	border-radius: 10px ;
-	/* -webkit-box-shadow: 水平距離 垂直距離 模糊半徑 擴散距離 顏色 inset(陰影向內); */
 	-webkit-box-shadow:
 		0px 3px #888,
 		0px 4px #7d7d7d,
@@ -25,17 +24,15 @@ a[id='button'] {
 		0px 9px #555,
 		0px 16px 5px -1px #888
 	;
-	transition: -webkit-box-shadow .2s ease-in-out ;
+	border-radius: 10px ;
+	transition: -webkit-box-shadow .1s ease-in-out ;
 }
 
 a[id='button'] span {
-	font-size: 3em ;
-	font-family: "Bernard MT" ;
-	display: inline-block ;
 	padding: 10px 40px ;
-	background-color: #E8E8E8 ;
 	border-radius: 10px ;
-	-webkit-box-shadow: 0px 0px 1px white, 0px -1px white ;
+	display: inline-block ;
+	background-color: white ;
 	background-image: -webkit-repeating-linear-gradient(
 		45deg,
 		#E8E8E8 0%,
@@ -43,13 +40,14 @@ a[id='button'] span {
 		#F5F5F5 0.5%,
 		#F5F5F5 2%
 	) ;
+	-webkit-box-shadow: 0px .1px 1px white, 0px -0.1px white;
+	font-size: 3em ;
+	font-family: "Bernard MT" ;
 	color: #3A474D ;
-	text-transform: uppercase ;
 	text-shadow: 0px -1px 0.1px #262F33 ;
+	text-transform: uppercase ;
 	transition:
-		transform .2s ease-in-out,
-		color .1s ease,
-		text-shadow .1s ease-in-out
+		transform .1s ease-in-out
 	;
 }
 
@@ -57,6 +55,10 @@ a[id='button']:hover span {
 	color: #AEBF3B ;
 	text-shadow: 0px -1px 0.1px #97A63A ;
 	cursor: pointer ;
+}
+
+a[id='button']:active span {
+	transform: translate( 0, 5px ) ;
 }
 
 a[id='button']:active {
@@ -70,8 +72,4 @@ a[id='button']:active {
 		0px 9px #555,
 		0px 14px 5px -1px #888
 	;
-}
-
-a[id='button']:active span {
-	transform: translate(0, 5px);
 }
